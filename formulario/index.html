@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulário</title>
+</head>
+<body>
+    <h1>Contato</h1>
+    <form action="" method="get" enctype="multipart/form-data">
+        <label for="iNome">Nome:</label>
+        <input type="text" id="iNome" name="nome" alt="Informar sue nome completo" placeholder="Seu nome" title="Informar sue nome completo" required size="40" maxlength="50">
+        <br>
+        <label for="iFone">Telefone:</label>
+        <input type="tel" id="iFone" name="fone" required pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" placeholder="(99) 9999-9999" title="Informe Telefone no formato (99) 9999-9999">
+        <br>
+        <label for="iEmail">e-mail:</label>
+        <input type="email" id="iEmail" name="email" value="" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <br>
+        <label for="iAssunto">Assunto:</label>
+        <input type="text" id="iAssunto" name="assunto">
+        <br>
+        <label for="iMensagem">Assunto:</label>
+        <textarea id="iMensagem" name="mensagem" placeholder="Como podemos ajudar?" rows="5" cols="45"></textarea>
+        <br>
+        <hr>
+        <h2>Complemento</h2>
+        <label for="iMasculino">Sexo:</label>&nbsp;
+        <input type="radio" id="iMasculino" name="sexo"><label for="iMasculino">Masculino</label>&nbsp;
+        <input type="radio" id="iFeminino" name="sexo"><label for="iFeminino">Feminino</label>&nbsp;
+        <input type="radio" id="iNaoinformar" name="sexo"><label for="iNaoinformar">Prefiro não informar</label><br>
+        <label for="iEscolaridade">Escolaridade:</label>
+        <select id="iEscolaridade" name="escolaridade">
+            <option value="fundamental">Ensino Fundamental</option>
+            <option value="medio" selected>Ensino Médio</option>
+            <option value="superior">Ensino Superior</option>
+            <option value="especializacao">Especoalização</option>
+            <option value="mestrado">Mestrado</option>
+            <option value="doutorado">Doutorado</option>
+        </select>
+        <br>
+        <label for="iDatanascto">Data Nascimento:</label>
+        <input type="date" id="iDatanascto" name="dtnascto">
+        <br>
+        <label for="iLer">Hobby</label>
+        <input type="checkbox" id="iLer" name="hobby" value="ler"><label for="iLer">Ler</label>&nbsp;
+        <input type="checkbox" id="iTV" name="hobby" value="tvstreaming"><label for="iTV">TV/Streaming</label>&nbsp;
+        <input type="checkbox" id="iEsporte" name="hobby" value="esporte"><label for="iEsporte">Esporte</label>&nbsp;
+        <input type="checkbox" id="iMusica>" name="hobby" value="musica"><label for="iMusica">Música</label>&nbsp;
+        <input type="checkbox" id="iOutros" name="hobby" value="outros"><label for="iOutros">Outros</label>&nbsp;
+        <br>
+        <label for="iCor">Selecione uma Cor:</label>
+        <input id="iCor" type="color" name="cor">
+        <br>
+        <label for="iFoto">Foto</label>
+        <input id="iFoto" type="file" name="foto">        
+        <br><br>
+        <input type="image" name="enviar" id="iOk" src="ok.png" 
+        width="48px">
+        <br>
+        <button type="submit">ENVIAR</button>&nbsp;
+        <button type="reset">LIMPAR</button>&nbsp;
+    </form>
+</body>
+</html>
