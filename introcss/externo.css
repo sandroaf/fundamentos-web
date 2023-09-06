@@ -1,0 +1,17 @@
+body {
+    background-color: darkolivegreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+h1 {
+    color: darkred;
+}
+
+p {
+    text-decoration: dotted;
+}
+
+address {
+    font-size: x-small;
+    color: darkray;
+}
