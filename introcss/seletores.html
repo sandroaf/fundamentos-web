@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p {
+            border-top: 1px yellow dotted;
+        }
+
+        li:nth-child(2n) {
+            background-color: black;
+            color: yellow;
+        }
+
+        li:hover {
+            background-color: blue;
+            color: bisque;
+            border-left: 4px solid bisque;
+        }
+
+        body {
+            font-size: 24px;
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
+        h1 {
+            font-size: xx-large;
+            color: blue;
+        }
+
+        #secao2 {
+            background-color: cornflowerblue;
+        }
+
+        #secao2 img {
+            width: 250px;
+        }
+
+        #secao1 p {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .sublinhado {
+            text-decoration: underline;
+        }
+
+        .vermelho {
+            color: red;
+        }
+
+        .tag::before {
+            content: "<";
+        }
+
+        .tag::after {
+            content: ">";
+        }
+
+        img[src='setas.png'] {
+            width: 20%;
+        }
+
+        img[src='setas.png']:hover {
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section id="secao1">
+        <h1>Seção 1</h1>
+        <p>Essa seção inicia nossa página e trás alguns elementos</p>
+        <ul>
+            <li><span class="tag">h</span> - Cabeçalhos</li>
+            <li><span class="tag">p</span> - Parágrafos</li>
+            <li>&lt;ul&gt; e &lt;li&gt; - Listas</li>
+        </ul>
+        <br>
+        <img src="setas.png">
+        <p class="sublinhado">Isso nos permite compreender melhor os seletores.</p>
+    </section>
+    <section id="secao2">
+        <p> Seguimos para a segunda seção.</p>
+        <h1 class="sublinhado vermelho">Seção 2</h1>
+        <p>Essa seção complementa nossa explicação. podemos combinar seletores com qualquer TAG, por exemplo <span class="tag">form</span> <span class="tag">input</span> </span>, </p>
+        <br>
+        <img src="css-logo.png" alt="Logo CSS">
+    </section>
+</body>
+</html>
